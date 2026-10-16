@@ -1,24 +1,17 @@
 {
   "name": "pi-waza-rules",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Pi extension that downloads Waza rules from GitHub and adds them to the system prompt",
-  "keywords": [
-    "pi-package"
-  ],
+  "keywords": ["pi-package"],
   "license": "MIT",
   "author": "xLsDg <xlsdg@qq.com>",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/xlsdg/pi-waza-rules.git"
+    "url": "git+https://github.com/xlsdg/pi-waza-rules.git"
   },
-  "files": [
-    "index.ts",
-    "README.md"
-  ],
+  "files": ["index.ts", "README.md"],
   "pi": {
-    "extensions": [
-      "./index.ts"
-    ]
+    "extensions": ["./index.ts"]
   },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*"
