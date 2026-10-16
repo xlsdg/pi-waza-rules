@@ -6,6 +6,7 @@ on:
 
 permissions:
   contents: read
+  id-token: write
 
 jobs:
   publish:
@@ -32,6 +33,4 @@ jobs:
           node -e "import('./index.ts').then(() => console.log('module loads'), (err) => { console.error(err); process.exit(1); })"
 
       - name: Publish
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --provenance
